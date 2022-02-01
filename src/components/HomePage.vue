@@ -87,7 +87,7 @@
       <page-section background="primary">
         <template v-slot:left>
           <v-img
-            :src="require('../assets/images/child-singing.png')"
+            :src="require('../assets/images/deanna-singing.png')"
             class="mx-auto"
             height="300"
             position="center 25%"
