@@ -34,7 +34,20 @@
             :src="require('../assets/images/child-singing.png')"
             class="mx-auto"
             height="300"
-          />
+          >
+            <template v-slot:placeholder>
+              <v-row
+                class="fill-height ma-0"
+                align="center"
+                justify="center"
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                ></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
         </template>
         <template v-slot:right>
           <p>
@@ -49,7 +62,20 @@
             :src="require('../assets/images/children-singing.png')"
             class="mx-auto"
             height="300"
-          />
+          >
+            <template v-slot:placeholder>
+              <v-row
+                class="fill-height ma-0"
+                align="center"
+                justify="center"
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                ></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
         </template>
         <template v-slot:left>
           <p>
@@ -61,11 +87,24 @@
       <page-section background="primary">
         <template v-slot:left>
           <v-img
-            :src="require('../assets/images/deanna-singing.png')"
+            :src="require('../assets/images/child-singing.png')"
             class="mx-auto"
             height="300"
             position="center 25%"
-          />
+          >
+            <template v-slot:placeholder>
+              <v-row
+                class="fill-height ma-0"
+                align="center"
+                justify="center"
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                ></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
         </template>
         <template v-slot:right>
           <p>
