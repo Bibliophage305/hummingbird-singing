@@ -1,125 +1,102 @@
 <template>
   <v-container fluid class="pa-0 ma-0">
-    <v-row class="text-center">
-      <v-col cols="12">
+    <title-section
+      showContactButton
+      subheading="Lorem ipsum dolor sit amet"
+    />
+
+    <page-section background="secondary">
+      <template v-slot:left>
         <v-img
-          :src="require('../assets/logos/logo.png')"
-          class="my-3"
-          contain
-          height="200"
-        />
-      </v-col>
-
-      <v-col class="mb-4">
-        <h1 class="display-2 mb-3 secondary--text">
-          HUMMINGBIRD SINGING
-        </h1>
-
-        <p class="subheading font-weight-regular">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit magnam ad minima consectetur voluptates sapiente, quas minus nam alias iusto adipisci laudantium, illo dolorum maxime reiciendis ex modi rem?
+          :src="require('../assets/images/child-singing.png')"
+          class="mx-auto"
+          height="300"
+        >
+          <template v-slot:placeholder>
+            <v-row
+              class="fill-height ma-0"
+              align="center"
+              justify="center"
+            >
+              <v-progress-circular
+                indeterminate
+                color="grey lighten-5"
+              ></v-progress-circular>
+            </v-row>
+          </template>
+        </v-img>
+      </template>
+      <template v-slot:right>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus suscipit, a quam blanditiis ab molestias animi veniam, magnam aperiam vel explicabo reiciendis nulla asperiores eos modi cupiditate excepturi, totam dolores!
         </p>
+      </template>
+    </page-section>
 
-        <v-btn
-          class="mb-2"
-          color="accent"
-          dark
-          to="/contact"
-        >Contact Us</v-btn>
+    <page-section background="white">
+      <template v-slot:right>
+        <v-img
+          :src="require('../assets/images/children-singing.png')"
+          class="mx-auto"
+          height="300"
+        >
+          <template v-slot:placeholder>
+            <v-row
+              class="fill-height ma-0"
+              align="center"
+              justify="center"
+            >
+              <v-progress-circular
+                indeterminate
+                color="grey lighten-5"
+              ></v-progress-circular>
+            </v-row>
+          </template>
+        </v-img>
+      </template>
+      <template v-slot:left>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus suscipit, a quam blanditiis ab molestias animi veniam, magnam aperiam vel explicabo reiciendis nulla asperiores eos modi cupiditate excepturi, totam dolores!
+        </p>
+      </template>
+    </page-section>
 
-      </v-col>
-
-      <page-section background="primary">
-        <template v-slot:left>
-          <v-img
-            :src="require('../assets/images/child-singing.png')"
-            class="mx-auto"
-            height="300"
-          >
-            <template v-slot:placeholder>
-              <v-row
-                class="fill-height ma-0"
-                align="center"
-                justify="center"
-              >
-                <v-progress-circular
-                  indeterminate
-                  color="grey lighten-5"
-                ></v-progress-circular>
-              </v-row>
-            </template>
-          </v-img>
-        </template>
-        <template v-slot:right>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus suscipit, a quam blanditiis ab molestias animi veniam, magnam aperiam vel explicabo reiciendis nulla asperiores eos modi cupiditate excepturi, totam dolores!
-          </p>
-        </template>
-      </page-section>
-
-      <page-section background="white">
-        <template v-slot:right>
-          <v-img
-            :src="require('../assets/images/children-singing.png')"
-            class="mx-auto"
-            height="300"
-          >
-            <template v-slot:placeholder>
-              <v-row
-                class="fill-height ma-0"
-                align="center"
-                justify="center"
-              >
-                <v-progress-circular
-                  indeterminate
-                  color="grey lighten-5"
-                ></v-progress-circular>
-              </v-row>
-            </template>
-          </v-img>
-        </template>
-        <template v-slot:left>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus suscipit, a quam blanditiis ab molestias animi veniam, magnam aperiam vel explicabo reiciendis nulla asperiores eos modi cupiditate excepturi, totam dolores!
-          </p>
-        </template>
-      </page-section>
-
-      <page-section background="primary">
-        <template v-slot:left>
-          <v-img
-            :src="require('../assets/images/deanna-singing.png')"
-            class="mx-auto"
-            height="300"
-            position="center 25%"
-          >
-            <template v-slot:placeholder>
-              <v-row
-                class="fill-height ma-0"
-                align="center"
-                justify="center"
-              >
-                <v-progress-circular
-                  indeterminate
-                  color="grey lighten-5"
-                ></v-progress-circular>
-              </v-row>
-            </template>
-          </v-img>
-        </template>
-        <template v-slot:right>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus suscipit, a quam blanditiis ab molestias animi veniam, magnam aperiam vel explicabo reiciendis nulla asperiores eos modi cupiditate excepturi, totam dolores!
-          </p>
-        </template>
-      </page-section>
-    </v-row>
+    <page-section background="secondary">
+      <template v-slot:left>
+        <v-img
+          :src="require('../assets/images/deanna-singing.png')"
+          class="mx-auto"
+          height="300"
+          position="center 25%"
+        >
+          <template v-slot:placeholder>
+            <v-row
+              class="fill-height ma-0"
+              align="center"
+              justify="center"
+            >
+              <v-progress-circular
+                indeterminate
+                color="grey lighten-5"
+              ></v-progress-circular>
+            </v-row>
+          </template>
+        </v-img>
+      </template>
+      <template v-slot:right>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus suscipit, a quam blanditiis ab molestias animi veniam, magnam aperiam vel explicabo reiciendis nulla asperiores eos modi cupiditate excepturi, totam dolores!
+        </p>
+      </template>
+    </page-section>
   </v-container>
 </template>
 
 <script>
   import PageSection from './PageSection'
+  import TitleSection from './TitleSection'
   export default {
-  components: { PageSection },
+  components: { PageSection, TitleSection },
     name: 'HomePage',
 
     data: () => ({

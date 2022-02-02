@@ -1,16 +1,18 @@
 <template>
-    <v-col cols="12">
-        <v-sheet class="px-3" :color="background">
-            <v-row>
-                <v-col cols="6">
-                    <slot name="left"></slot>
-                </v-col>
-                <v-col cols="6">
-                    <slot name="right"></slot>
-                </v-col>
-            </v-row>
-        </v-sheet>
-    </v-col>
+    <v-row>
+        <v-col cols="12">
+            <v-sheet class="px-3" :color="background">
+                <v-row>
+                    <v-col cols="6">
+                        <slot name="left"></slot>
+                    </v-col>
+                    <v-col cols="6">
+                        <slot name="right"></slot>
+                    </v-col>
+                </v-row>
+            </v-sheet>
+        </v-col>
+    </v-row>
 </template>
 
 <script>

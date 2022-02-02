@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
+      color="secondary"
       dark
     >
       <v-spacer></v-spacer>
@@ -21,7 +21,7 @@
         nav
       >
         <v-list-item-group
-          active-class="deep-purple--text text--accent-4"
+          active-class="primary--text text--accent-4"
         >
           <v-list-item to="/">
             <v-list-item-title>Home</v-list-item-title>
