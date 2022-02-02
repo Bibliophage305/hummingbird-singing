@@ -1,4 +1,4 @@
-# deanna-site
+# Hummingbird Singing site
 
 ## Project setup
 ```

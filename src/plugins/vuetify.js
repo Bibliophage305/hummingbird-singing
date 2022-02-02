@@ -3,9 +3,6 @@ import Vuetify from 'vuetify/lib/framework';
 
 Vue.use(Vuetify);
 
-// Fonts are 
-// Reason new and BDSans
-
 export default new Vuetify({
     theme: {
         themes: {
